@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-navbar">
+  <a class="navbar-brand" [routerLink]="['/']">
+    <img [src]="app.logo" width="100" height="100" alt="logo">
+  </a>
+  
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" [routerLink]="['/novedades']">Novedades</a>
+      <a class="nav-item nav-link" [routerLink]="['/descuentos']">Descuentos</a>
+    </div>
+
+    <div class="navbar-nav ms-auto"> 
+      <a class="nav-item nav-link" [routerLink]="['/carrito']">
+        <i class="bi bi-cart"></i> Carrito
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="py-3 text-center">{{app.title}} 2025</footer>

@@ -1,0 +1,27 @@
+<h2 class="text-center my-4">Lista de juegos</h2> 
+<div class="table-responsive"> 
+    <table class="table table-hover align-middle table-borderless"> 
+        <thead>
+            <tr> 
+                <th scope="col" class="text-center"></th> <th scope="col">Nombre</th>
+                <th scope="col" class="text-center">Descripción</th>
+                <th scope="col" class="text-center">Precio</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let game of games" class="border-bottom"> 
+                <td class="text-center py-3"> 
+                    <img class="juegosImg rounded shadow-sm" [src]="game.imagen" [alt]="game.nombre"> 
+                </td>
+                <td class="fw-bold">{{game.nombre}}</td> 
+                <td class="text-muted small">{{game.descripcion}}</td> 
+                <td class="text-center">
+                    <span class="badge bg-warning text-dark py-2 px-3" *ngIf="game.precio==0">No disponible</span> <span class="fw-bold fs-5" *ngIf="game.precio != 0">${{ game.precio }}</span> </td>
+                <td class="text-center">
+                    <button *ngIf="game.adquirido == false && game.precio != 0" class="btn btn-primary btn-sm" (click)="addCarrito(game)">Comprar</button> 
+                    <span class="btn btn-success disabled btn-sm" *ngIf="game.adquirido == true">Adquirido</span> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

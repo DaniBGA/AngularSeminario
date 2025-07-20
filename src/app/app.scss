@@ -1,0 +1,14 @@
+.fixed-navbar {
+  height: 100px;               /* Altura fija */
+  padding: 0 1rem;             /* Espaciado horizontal */
+  display: flex;
+  align-items: center;         /* Centrado vertical */
+}
+.custom-navbar {
+  background: linear-gradient(
+      to bottom, 
+      rgba(138, 43, 226, 0.3) 0%,    /* Violeta con baja opacidad */
+      rgba(138, 43, 226, 0.1) 30%,   /* Degradado sutil descendente */
+      transparent 60%
+    ),
+}

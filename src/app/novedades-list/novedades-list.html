@@ -1,0 +1,21 @@
+<h2 class="text-center my-4">Novedades</h2>
+
+<div *ngFor="let noticia of notis" class="card mb-4 shadow-sm border-0">
+  <div class="row g-0 align-items-center">
+    <div class="col-md-4">
+      <div class="noticia-img-container">
+        <img 
+          [src]="noticia.image"  
+          [alt]="noticia.name" 
+          class="noticia-img"
+        >
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-dark">{{ noticia.name }}</h5>
+        <p class="card-text text-muted">{{ noticia.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
