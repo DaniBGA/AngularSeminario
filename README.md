@@ -6,8 +6,8 @@ Este proyecto se trata de una pagina de compra de videojuegos e incluso noticias
 hay una conexion de servicios entre el carrito y la pagina principal a la hora de hacer la compra de un juego
 
 datos del estudiante: 
-nombre: Daniel
-Apellido: Gongora Banegas
-Dni: 46116932
-email: danielbanegas.gongora@gmail.com
-sede: Tandil.
+nombre: Daniel<br>
+Apellido: Gongora Banegas<br>
+Dni: 46116932<br>
+email: danielbanegas.gongora@gmail.com<br>
+sede: Tandil.<br>
